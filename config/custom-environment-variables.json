@@ -1,0 +1,4 @@
+{
+    "jwtPrivateKey": "emotion_jwtPrivateKey",
+    "db":"emotion_db"
+}
