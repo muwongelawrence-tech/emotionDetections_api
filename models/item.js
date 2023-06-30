@@ -25,7 +25,7 @@ const itemSchema = new mongoose.Schema({
     description: {
         type: String,
         required: true,
-        maxlength: 300
+        maxlength: 2000
     },
 
     avatar: {
@@ -46,7 +46,7 @@ function validateItem(item) {
         ownerName: Joi.string().max(50).required(),
         price: Joi.number().required(),
         contact: Joi.string().required(),
-        description: Joi.string().max(300).required(),
+        description: Joi.string().max(2000).required(),
     };
 
     return result = Joi.validate(item, schema);
