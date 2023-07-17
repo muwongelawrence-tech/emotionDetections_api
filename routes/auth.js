@@ -20,7 +20,7 @@ router.post('/',async (req,res) => {
     //Get  the json web token generated.....
    const token = user.generateAuthToken();
 
-   res.send(token);
+   res.send(user);
 
 });
 

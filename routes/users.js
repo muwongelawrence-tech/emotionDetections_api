@@ -32,7 +32,7 @@ router.post("/", async (req, res) => {
   const token = user.generateAuthToken();
 
   //Send back the response to the client..
-  res.status(200).send("user Registered successfully...");
+  res.status(200).send(user);
 });
 
 module.exports = router;
